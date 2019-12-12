@@ -19,7 +19,7 @@ import { HomeComponent } from './components/home/home.component';
 const appRoutes: Routes = [
   { path: 'loginAlumno', component: LoginComponent },
   { path: 'loginprofesor', component: LoginPComponent },
-  { path: 'home', component: QuienComponent},
+  { path: 'quien', component: QuienComponent},
   { path: 'NotasAlumno', component: NotasComponent },
   { path: 'comentarios', component: CajaComponent},
   { path: 'Iprofe', component: IprofeComponent},
@@ -28,12 +28,12 @@ const appRoutes: Routes = [
   { path: 'notas', component: NotasComponent},
   { path: 'home', component: HomeComponent},
   {
-    path: 'login',
-    component: LoginComponent,
-    data: { title: 'login'}
+    path: 'home',
+    component: HomeComponent,
+    data: { title: 'home'}
   },
   { path: '',
-    redirectTo:'/login',
+    redirectTo:'/home',
     pathMatch:'full'
   }
 ];
