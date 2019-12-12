@@ -1,1 +1,37 @@
-<p>ialumno works!</p>
+<h1 id="name-form">Inscripción alumno</h1>
+
+<div id="div1">
+    <form [formGroup]="signupForm" (ngSubmit)="enviar(signupForm.value)" id="div2">
+        <input formControlName="nombres" placeholder="Nombres" type="text" id="input1"/>
+        <input formControlName="apellidos"placeholder="Apellidos" type="text" class="input2"/>
+        <input formControlName="email" placeholder="Email" type="text"/>
+        <div *ngIf="signupForm.get('email').hasError('email') && signupForm.get('email').touched ">Email obligatorio</div>
+        <input formControlName="rut" placeholder="Rut" type="text"/>
+        <input formControlName="clave" placeholder="Contraseña" type="password"/>
+        <input placeholder="Repita contraseña" type="password"/>
+        <button id="btn1"(click)="enviar(values)" [disabled]="signupForm.invalid" type="submit">Crear alumno</button>
+    </form>
+</div>
+
+<nav id="nav2"class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Simulacro</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
