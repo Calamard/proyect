@@ -1,0 +1,19 @@
+.imagen-{
+    border: solid 10px rgb(0, 0, 0);
+    
+}
+.text-decoration{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    background-color: transparent;
+}
+.typo{
+    font-size: xx-large;
+}
+#tabla1 {
+    margin: auto;
+}
+
+
+
+
