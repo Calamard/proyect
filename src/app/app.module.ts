@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FormsModule }          from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
@@ -14,16 +14,15 @@ import { IalumnoComponent } from './components/ialumno/ialumno.component';
 import { ProfesorComponent } from './components/profesor/profesor.component';
 import { HomeComponent } from './components/home/home.component';
 
-
-
 const appRoutes: Routes = [
   { path: 'loginAlumno', component: LoginComponent },
   { path: 'loginprofesor', component: LoginPComponent },
   { path: 'quien', component: QuienComponent},
-  { path: 'NotasAlumno', component: NotasComponent },
+  { path: 'NotasAlumno', component: NotasComponent }, 
+
   { path: 'comentarios', component: CajaComponent},
-  { path: 'Iprofe', component: IprofeComponent},
-  { path: 'Ialumno', component: IalumnoComponent},
+  { path: 'iprofe', component: IprofeComponent},
+  { path: 'ialumno', component: IalumnoComponent},
   { path: 'profesor', component: ProfesorComponent},
   { path: 'notas', component: NotasComponent},
   { path: 'home', component: HomeComponent},
@@ -54,7 +53,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes, {  enableTracing: true })
+    RouterModule.forRoot(appRoutes, {  enableTracing: true }),   
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
