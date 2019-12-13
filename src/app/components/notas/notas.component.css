@@ -1,1 +1,16 @@
-
+.padre {
+    background-color: #fafafa;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    
+    text-align: center;
+  }
+  .padre2 {
+    background-color: #fafafa;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    
+    text-align: center;
+  }
