@@ -1,23 +1,23 @@
-<p>Simulacro</p>
-<form>
-    
-    <table>
-        <th colspan="2">Inscripcion Profesor</th>
-        <tr>
-            <td><input type="text" placeholder="Nombres"></td>
-            <td><input type="text" placeholder="Apellidos"></td>
-        </tr>
-        <tr>
-            <td><input type="text" placeholder="E-mail"></td>
-            <td><input type="text" placeholder="Rut"></td>
-        </tr>
-        <tr>
-            <td><input type="password" placeholder="Contrasena"></td>
-            <td><input type="password" placeholder="Repita Contrasena"></td>
-        </tr>
-        <tr align="center">
-            <td colspan="2" ><input type="submit" value="Crear Profesor"></td>
-        </tr>
-    </table>
+<h1 id="name-form">Inscripción Profesor</h1>
 
-</form>
+<div id="div1">
+    <form [formGroup]="signupForm" (ngSubmit)="enviar(signupForm.value)" id="div2">
+        <input formControlName="nombres" placeholder="Nombres" type="text" id="input1"/>
+        <input formControlName="apellidos"placeholder="Apellidos" type="text" class="input2"/>
+        <input formControlName="email" placeholder="Email" type="text"/>
+        <div  *ngIf="signupForm.get('email').hasError('email') && signupForm.get('email').touched ">Email obligatorio</div>
+        <input formControlName="rut" placeholder="Rut" type="text"/>
+        <input formControlName="clave" placeholder="Contraseña" type="password"/>
+        <input placeholder="Repita contraseña" type="password"/>
+        <button id="btn1"(click)="enviar(values)" [disabled]="signupForm.invalid" type="submit">Crear Profesor</button>
+    </form>
+</div>
+
+<div id="nav1">
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo.png" width="45" height="40" class="d-inline-block align-top" alt="">
+          <font class= "typo" face="Georgia" >Simulacro</font> 
+        </a>
+    </nav>
+</div>
