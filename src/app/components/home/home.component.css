@@ -1,0 +1,82 @@
+
+
+.imagen-{
+    border: solid 10px rgb(0, 0, 0);
+    
+}
+.typo{
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-style: bold;
+    
+}
+.headlinetypo{
+    font-family: Georgia;
+    font-size: 100px;
+}
+#tabla1 {
+    margin: auto;
+}
+.container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    display:block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 3%;
+    right: 4%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color:rgba(70, 66, 66, 0.24);
+  }
+  .overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 4.5%;
+    right: 2.5%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color:rgba(70, 66, 66, 0.24);
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  .container:hover .overlay1 {
+    opacity: 1;
+  }
+  
+  .text {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-family: Georgia ;
+    position: absolute;
+    top: 7%;
+    left: 20%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text2 {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-family: Georgia ;
+    position: absolute;
+    top: 7%;
+    left: 80%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

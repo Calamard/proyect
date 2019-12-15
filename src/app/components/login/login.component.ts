@@ -8,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
 
   constructor() { }
-
   ngOnInit() {
   }
-
+enviar(values){
+    alert("Alumno creado con éxito")
+    console.log(values)
+  }
 }
