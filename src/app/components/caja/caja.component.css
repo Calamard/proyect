@@ -1,0 +1,11 @@
+*{
+    margin:0px;
+    padding:0px;
+    color: white;
+    font-family: arial;
+}
+div#imagen{
+    width: 100px;
+    height: 100px;
+    background-image:"assets/img/botonProfe.png";
+}
