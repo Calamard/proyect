@@ -35,7 +35,7 @@ const appRoutes: Routes = [
     redirectTo:'/home',
     pathMatch:'full'
   }
-;
+];
 
 @NgModule({
   declarations: [
