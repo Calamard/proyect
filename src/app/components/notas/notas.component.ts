@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-notas',
+  selector: 'notas',
   templateUrl: './notas.component.html',
   styleUrls: ['./notas.component.css']
 })
